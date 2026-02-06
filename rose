@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Happy Rose Day ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #ff5f6d, #ffc371);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: white;
+        text-align: center;
+        padding: 16px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 380px;
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 24px;
+        padding: 22px 18px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+        animation: fadeIn 1.4s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(25px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .rose {
+        font-size: 42px;
+        margin-bottom: 6px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin: 8px 0 14px;
+    }
+
+    h1 span {
+        color: #fff6b7;
+    }
+
+    img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white;
+        box-shadow: 0 0 20px rgba(255,255,255,0.6);
+        margin-bottom: 14px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+
+    .play-btn {
+        margin-top: 14px;
+        padding: 12px 22px;
+        font-size: 0.95rem;
+        border-radius: 30px;
+        border: none;
+        background: white;
+        color: #ff5f6d;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    }
+
+    footer {
+        margin-top: 14px;
+        font-size: 0.85rem;
+        opacity: 0.9;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="rose">🌹</div>
+
+    <h1>Happy Rose Day, <span>Poonam(pglii)</span> ❤️</h1>
+
+    <img src="her-photo.jpg" alt="My Love">
+
+    <p>
+        Just like a rose adds beauty and fragrance to life,  
+        you add happiness and meaning to mine.
+    </p>
+
+    <p>
+        One rose for my one and only 🌹  
+        Thank you for being my smile every single day.
+    </p>
+
+    <p>
+        My love for you grows stronger with every heartbeat 💕
+    </p>
+
+    <button class="play-btn" onclick="playMusic()">▶ Play Music</button>
+
+    <footer>
+        Forever yours ❤️<br>— Anmol
+    </footer>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playMusic() {
+    document.getElementById("bgMusic").play();
+}
+</script>
+
+</body>
+</html>
